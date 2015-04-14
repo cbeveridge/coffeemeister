@@ -1,0 +1,63 @@
+.cb-main{
+	position: relative;
+	background-color: #FFF;
+	overflow-y: auto;
+	height: calc(100% - 64px);
+	max-width: 700px;
+	margin: 0em auto;
+}
+
+.cb-main .stops {
+	position: relative;
+	height: 4em;
+	margin: 0.5em auto;
+	box-shadow: 2px 2px 4px #BBB;
+	cursor: pointer;
+	outline: none;
+	max-width: 600px;
+	background-color: #FFF;
+}
+
+.cb-main .location{
+	height:  4em;
+	font-size: 1.2em;
+	text-indent: 0.5em;
+	padding-top: 0.5em;
+}
+
+.cb-main .notify,
+.cb-main .location{
+	
+}
+
+.cb-main .location .status{
+	font-size: 0.7em;
+	text-indent: 0.8em;
+	color: #CCC
+}
+
+.cb-main .location:focus{
+	
+}
+
+.cb-main .notify{
+	position: absolute;
+	right: 0.5em;
+	top: 0.3em;
+}
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+	.cb-main .stops {
+		
+		//height: 4em;
+		
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {  }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }

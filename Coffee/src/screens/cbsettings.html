@@ -1,0 +1,14 @@
+<cb-css cb-id="cbsettings" cb-css-file="screens/cbsettings.css"></cb-css>
+<div ng-controller="cbSettingsController" class="cb-settings">
+	<md-content layout-padding>
+		<section>
+			<md-subheader class="md-primary">Warning time</md-subheader>
+			
+				<md-slider flex min="0" max="120" ng-model="warningTime">
+      			</md-slider>
+      			<div ng-model="warningTime">{{ warningTime }} seconds</div>
+			
+		</section>
+		
+  	</md-content>
+</div>

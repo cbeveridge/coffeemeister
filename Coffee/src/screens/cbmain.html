@@ -1,0 +1,12 @@
+<cb-css cb-id="cbmain" cb-css-file="screens/cbmain.css"></cb-css>
+<div ng-controller="cbMainController" class="cb-main">
+	<div class="stops" ng-click="handleLocationClick( $event )" ng-repeat="stop in availableStops">
+		<div class="location">
+			<div>{{ stop.location }}</div>
+			<div class="status">AWAITING ARRIVAL</div>
+		</div>
+		<div class="notify">
+			<md-switch ng-model="stop.selected" aria-label="Checkbox 1"></md-switch>
+		</div>
+	</div>
+</div>

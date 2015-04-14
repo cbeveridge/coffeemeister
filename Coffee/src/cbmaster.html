@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Access-Control-Allow-Origin" content="*">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name=viewport content="minimal-ui, width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title></title>
+		<link href="lib/css/jquery-ui.min.css" rel="stylesheet" />
+		<link href="lib/css/angular-material.css" rel="stylesheet" />
+	    <link href="cbmaster.css" rel="stylesheet" />
+	</head>
+	<script src="scripts/lib/socket_io.js"></script>
+	<script data-main="main" src="require.js"></script>
+	<body class="vision-parent-module" ng-class="noScroll ? 'no-scroll' : ''" ng-controller="cbMasterController">
+		<cb-top-bar></cb-top-bar>
+		<cb-main ng-show="screens.MAIN"></cb-main>
+		<cb-help ng-show="screens.HELP"></cb-help>
+		<cb-about ng-show="screens.ABOUT"></cb-about>
+		<cb-settings ng-show="screens.SETTINGS"></cb-settings>
+	</body>
+</html>

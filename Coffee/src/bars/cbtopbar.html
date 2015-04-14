@@ -1,0 +1,17 @@
+ <cb-css cb-id="cbtopbar" cb-css-file="bars/cbtopbar.css"></cb-css>
+ <md-toolbar class="top-toolbar" ng-controller="cbTopBarController">
+  <div class="md-toolbar-tools">
+  	<md-icon class="back-button" ng-show="!screens.MAIN" md-svg-icon="images/chevron-left.svg" ng-click="handleBackButton()"></md-icon>
+  	<div class="toolbar-logo" >
+  		<img src="images/Nicattos-logo.gif">
+  	</div>
+  	
+    <h2>
+      <span>Daily Grind</span>
+    </h2>
+    <span flex></span>
+    <md-button class="md-icon-button" aria-label="More" ng-click="handleMenuButtonClick()">
+      <md-icon md-svg-icon="images/dots-vertical.svg"></md-icon>
+    </md-button>
+  </div>
+</md-toolbar>

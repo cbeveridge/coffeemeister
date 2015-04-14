@@ -1,0 +1,37 @@
+.cb-about{
+	max-width: 700px;
+	margin: 0em auto;
+	height: 100%;
+
+}
+
+.cb-about,
+.cb-about md-content
+{
+	height: 100%;
+}
+
+.cb-about section{
+	margin-top: 2em;
+}
+
+.cb-about md-content{
+	padding-left: 1.5em
+}
+
+.cb-about .lined-icon,
+.cb-about .contributor {
+	display: inline-block;
+}
+
+.cb-about .contributor-container{
+	cursor: pointer;
+}
+
+.cb-about a{
+	  text-decoration: none;
+}
+
+.cb-about a{
+	  color: #000;
+}
