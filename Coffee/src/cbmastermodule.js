@@ -28,7 +28,8 @@
 
 })
 .factory('cbMasterFactory',  function( $rootScope ){
-  var socket = io();
+  var socket = io.connect("http://23.21.240.96:80");
+
   var factory = {};
   var connected = false;
   var onQueue = [];
@@ -59,7 +60,8 @@
     }else{
       onQueue.push( { id: id, callback: callback } );
     }
-  };
+  }; 
+
 
   factory.on('connect', function(){
     connected = true;
